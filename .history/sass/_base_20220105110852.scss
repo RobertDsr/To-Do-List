@@ -1,0 +1,14 @@
+body {
+    background-color: var(--bg-main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-main-color);
+}
+
+button {
+    background-color: var(--btn-bg-color);
+    border: none;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 2em;
+    font-size: 20px;
+}

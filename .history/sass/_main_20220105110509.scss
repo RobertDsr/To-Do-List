@@ -1,0 +1,27 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0.3em;
+}
+
+.search {
+    margin: 20px auto;
+    min-height: 30px;
+    min-width: 50%;
+    font-size: 20px;
+}
+
+// .add-task {
+//     margin: 20px auto;
+//     min-height: 30px;
+//     min-width: 50%;
+//     font-size: 20px;
+// }
+
+.add-task__input 
