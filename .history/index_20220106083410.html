@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="main-wrapper">
+        <h1 class="title">ZADANIA</h1>
+        <input class="search" type="text" placeholder="Wpisz szukane słowo">
+        <form class="add-task" action="">
+            <input class="add-task__input" type="text" placeholder="Wpisz zadanie">
+            <button class="btn btn--small">DODAJ</button>
+        </form>
+        <button class="btn btn--large">USUŃ WSZYSTKO</button>
+        <h2 class="title-count-task">Liczba zadań: <span class="count-task">0</span></h2>
+            <ul class="list">
+                <li data-key="1" class="list__item">zadanie-2</li>
+                <button data-key="1" class="btn btn--medium">WYKONANE</button> data-key="1"
+                <li data-key="2" class="list__item">zadanie-3</li>
+                <button data-key="2" class="btn btn--medium">WYKONANE</button>
+                <li data-key="3" class="list__item">zadanie-1</li>
+                <button data-key="3" class="btn btn--medium">WYKONANE</button>
+                <li data-key="4" class="list__item">zadanie-4</li>
+                <button data-key="4" class="btn btn--medium">WYKONANE</button>
+                <li data-key="5" class="list__item">zadanie-5</li>
+                <button data-key="5" class="btn btn--medium">WYKONANE</button>
+                <li data-key="6" class="list__item">zadanie-6</li>
+                <button data-key="6" class="btn btn--medium">WYKONANE</button>
+                <li data-key="7" class="list__item">zadanie-7</li>
+                <button data-key="7" class="btn btn--medium">WYKONANE</button>
+                <li data-key="8" class="list__item">zadanie-8</li>
+                <button data-key="8" class="btn btn--medium">WYKONANE</button>
+                <li data-key="9" class="list__item">zadanie-9</li>
+                <button data-key="9" class="btn btn--medium">WYKONANE</button>
+                <li data-key="10" class="list__item">zadanie-10</li>
+                <button data-key="1" class="btn btn--medium">WYKONANE</button>
+            </ul>
+        <h2 class="title-count-task">Dzisiaj wykonałeś <span class="count-task">0</span> zadań z <span
+                class="count-task">10</span></h2>
+    </section>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
