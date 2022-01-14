@@ -33,6 +33,12 @@
     margin: 10px auto;
 }
 
+.btn--medium {
+    margin: 0;
+    border-radius: 0;
+    grid
+}
+
 .title-count-task {
     margin: 30px 30px 60px;
     text-align: center;
@@ -46,18 +52,9 @@
 
 .list__item {
     display: grid;
-    flex-basis: 90%;
+    flex-basis: 80%;
     font-size: 20px;
-    margin: 10px auto;
+    margin: 10px;
     padding: 0 0 0 10px;
     border: 1px solid ;
-    line-height: 2.2em;
-}
-
-.btn--medium {
-    margin: 0;
-    border-radius: 0;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    justify-self: end;
 }
