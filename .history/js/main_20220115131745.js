@@ -11,12 +11,12 @@ const li = document.querySelectorAll('.list__item');
 const restTaskNumber = document.querySelector('.rest-task');
 
 // Wyszukiwarka
-let tasks = [...liElements];
 const searchTask = (e) => {
     const searchTekst = e.target.value.toLowerCase();
-    let newtasks = tasks.filter(li => li.textContent.toLowerCase().includes(searchTekst));
+    let tasks = [...liElements];
+    tasks = tasks.filter(li => li.textContent.toLowerCase().includes(searchTekst));
     ul.textContent = "";
-    newtasks.forEach(li => ul.appendChild(li));
+    tasks.forEach(li => ul.appendChild(li));
 }
 
 input.addEventListener('input', searchTask);
@@ -32,8 +32,6 @@ const removeTask = (e) => {
 
     taskNumber.textContent = liElements.length;
     leftTasks();
-
-    tasks = [...document.querySelectorAll('li')];
 }
 
 
@@ -43,7 +41,6 @@ const removeTask = (e) => {
 
 const addTask = (e) => {
     e.preventDefault();
-    tasks.forEach(li => ul.appendChild(li));
     const titleTask = inputAddTask.value;
     if(titleTask === "") return;
     const taskElements = document.createElement('li');
@@ -59,15 +56,14 @@ const addTask = (e) => {
     taskNumber.textContent = liElements.length;
     leftTasks();
 
-    tasks = [...document.querySelectorAll('li')];
-
     taskElements.querySelector('.btn--medium ').addEventListener('click', removeTask);
 }
 
 const leftTasks = () => {
-    if(liElements.length != 0)  {
+    if(liElements != 0)  {
         restTaskNumber.textContent = "Zostało Ci " + liElements.length + " zadań.";
-    }else {
+    }
+    else{
         restTaskNumber.textContent = "Brawo wykonałeś wszystkie zadania";
     }
 }

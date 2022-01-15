@@ -14,6 +14,7 @@ const restTaskNumber = document.querySelector('.rest-task');
 let tasks = [...liElements];
 const searchTask = (e) => {
     const searchTekst = e.target.value.toLowerCase();
+    
     let newtasks = tasks.filter(li => li.textContent.toLowerCase().includes(searchTekst));
     ul.textContent = "";
     newtasks.forEach(li => ul.appendChild(li));
@@ -43,7 +44,7 @@ const removeTask = (e) => {
 
 const addTask = (e) => {
     e.preventDefault();
-    tasks.forEach(li => ul.appendChild(li));
+    tasks.forEach(li => ul.appendChild(li))
     const titleTask = inputAddTask.value;
     if(titleTask === "") return;
     const taskElements = document.createElement('li');
